@@ -23,7 +23,7 @@ btn.forEach(button => {
 
     // ✅ update image AFTER index changes
     container.style.background = 
-      `url('Image Slider/images/${img[index]}.jpg') center/cover no-repeat`;
+      `url('./images/images/${img[index]}.jpg') center/cover no-repeat`;
   });
 });
 

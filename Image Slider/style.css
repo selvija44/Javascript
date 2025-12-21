@@ -10,7 +10,7 @@
 #slider{
     width: 80%;
     height: 70%;
-    background : url('Image Slider/images/1.jpg') center/cover fixed no-repeat;
+    background : url('./images/images/1.jpg') center/cover fixed no-repeat;
     border: 1px solid purple;
     display: flex;
     align-items: center;              /* vertical center */
