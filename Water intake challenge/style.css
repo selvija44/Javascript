@@ -1,21 +1,88 @@
-body{
-    margin : 0;
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
     background-color: lightblue;
     display: flex;
     justify-content: center;
     align-items: center;
-    height : 100vh;
-   
+    height: 100vh;
 }
 
-.container{
-    border : 0.1em solid black;
-    width : 500px;
-    height: 500px;
-    padding: 1em;
+/* Main Card */
+.container {
+    border: 1px solid #000;
+    width: 400px;
+    padding: 20px;
     background-color: white;
-    border-radius: 1em;
+    border-radius: 16px;
+
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Headings */
+.container h2,
+.container h3,
+.container h4 {
+    margin: 4px 0;
+    text-align: center;
+}
+
+/* Dropdown */
+select {
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Glass boxes */
+.boxes {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+/* Individual glass */
+.item {
+    border: 2px solid #333;
+    width: 50px;
+    height: 70px;
+    border-radius: 6px;
+    background-color: #e6f7ff;
+}
+
+/* Progress text */
+p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/* Buttons */
+button {
+    padding: 8px 16px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:first-of-type {
+    background-color: #00bfff;
+    color: white;
+}
+
+button:last-of-type {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.color{
+    background-color: blue;
 }
