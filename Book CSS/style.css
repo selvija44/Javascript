@@ -1,65 +1,73 @@
-.read{
+table{
+    border-collapse: collapse;
+    
+}
+
+thead{
+    background-color: aqua;
+}
+
+tr[class="read"]{
     background-image: linear-gradient(to right,green,rgb(138, 227, 138),rgb(22, 45, 22));
 }
 
-.to-read{
+tr[class="to-read"]{
     background-image: linear-gradient(to right,green,rgb(76, 245, 76),rgb(6, 71, 6));
 }
 
-.in-progress{
+tr[class="in-progress"]{
     background-image: linear-gradient(to right,rgb(136, 6, 28),rgb(147, 43, 60),rgb(128, 89, 96))
 }
 
 span{
     display: inline-block;
 }
+tr[class="to-read"] span[class='status']{
 
-.to-read .status{
     border : 3px solid black;
     border-radius: 40%;
-    background-color: lightcoral;
+    background-image: linear-gradient(lightcoral);
 }
 
-.in-progress .status{
+tr[class="in-progress"] span[class='status']{
     border : 3px solid black;
     border-radius: 40%;
-    background-color: yellowgreen;
+    background-image: linear-gradient(yellowgreen);
 }
 
-.read .status{
+tr[class="read"] span[class='status']{
     border : 3px solid black;
     border-radius: 45%;
-    background-color: rgb(28, 252, 28);
+    background-image: linear-gradient(rgb(28, 252, 28));
 }
 
-.status{
+
+
+span[class="status"],span[class^="rate"]{
     height : 20px;
     width : 100px;
-    padding: 10px;
-}
-
-.rate{
-    height : 20px;
-    width : 150px;
     padding : 4px;
 }
 
-.rate>span{
+span[class^="rate"]>span{
     border : 1px solid black;
     border-radius: 60%;
     width : 20px;
     height : 20px;
     background-color: whitesmoke;
+    margin : 4px;
 }
 
-.one>span:nth-child(1){
-    background-color: yellow;
+span[class~="one"]>span:nth-child(1){
+    background-image: linear-gradient(yellow);
 }
 
-.two>span:nth-child(1),.two>span:nth-child(2){
-    background-color: yellow;
+span[class~="two"]>span:nth-child(1),
+span[class~="two"]>span:nth-child(2){
+    background-image: linear-gradient(yellow);
 }
 
-.three>span{
-    background-color: yellow;
+span[class~="three"]>span{
+    background-image: linear-gradient(yellow);
 }
+
