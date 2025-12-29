@@ -1,0 +1,65 @@
+.read{
+    background-image: linear-gradient(to right,green,rgb(138, 227, 138),rgb(22, 45, 22));
+}
+
+.to-read{
+    background-image: linear-gradient(to right,green,rgb(76, 245, 76),rgb(6, 71, 6));
+}
+
+.in-progress{
+    background-image: linear-gradient(to right,rgb(136, 6, 28),rgb(147, 43, 60),rgb(128, 89, 96))
+}
+
+span{
+    display: inline-block;
+}
+
+.to-read .status{
+    border : 3px solid black;
+    border-radius: 40%;
+    background-color: lightcoral;
+}
+
+.in-progress .status{
+    border : 3px solid black;
+    border-radius: 40%;
+    background-color: yellowgreen;
+}
+
+.read .status{
+    border : 3px solid black;
+    border-radius: 45%;
+    background-color: rgb(28, 252, 28);
+}
+
+.status{
+    height : 20px;
+    width : 100px;
+    padding: 10px;
+}
+
+.rate{
+    height : 20px;
+    width : 150px;
+    padding : 4px;
+}
+
+.rate>span{
+    border : 1px solid black;
+    border-radius: 60%;
+    width : 20px;
+    height : 20px;
+    background-color: whitesmoke;
+}
+
+.one>span:nth-child(1){
+    background-color: yellow;
+}
+
+.two>span:nth-child(1),.two>span:nth-child(2){
+    background-color: yellow;
+}
+
+.three>span{
+    background-color: yellow;
+}
