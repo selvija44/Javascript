@@ -1,0 +1,25 @@
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  padding: 20px;
+  border-right: 2px solid #ddd;
+}
+
+#main-doc{
+  margin-left: 320px;
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  #navbar {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  #main-doc {
+    margin-left: 0;
+  }
+}
