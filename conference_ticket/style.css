@@ -1,0 +1,25 @@
+:root{
+    --Neutral0: hsl(0, 0%, 100%);
+    --Neutral3: hsl(252, 6%, 83%);
+    --Neutral5: hsl(245, 15%, 58%);
+    --Neutral7: hsl(245, 19%, 35%);
+    --Neutral9: hsl(248, 70%, 10%);
+    --Orange5: hsl(7, 88%, 67%);
+    --Orange7: hsl(7, 71%, 60%);
+
+    --Gradient : hsl(7, 86%, 67%) to hsl(0, 0%, 100%)
+}
+
+body{
+    background-image: url('./assets/images/background-desktop.png');
+    color: white;
+}
+
+.bodyele{
+    border: 4px solid black;
+    display: flex;
+    margin: 0 auto;
+    width : 40%;
+    height: 700px;
+
+}
