@@ -16,39 +16,43 @@
     <div class="bodyele">
          <div class="heading">
     <img src="./assets/images/logo-full.svg" alt="">
-    <h1>Coding Conf</h1>
+    
   </div>
   <div class="heading2">
-    <h2>Your Journey to Coding Conf 2025 Starts Here!</h2>
+    <pre id="pre">Your Journey to Coding Conf 
+  2025 Starts Here!</prepre>
     <p id="p1">Secure your spot at next year's biggest coding conference.</p>
   </div>
 
  <div class="form">
     <div class="upload">
       <h4>Upload Avatar</h4>
-      <img src="./assets/images/icon-upload.svg" alt="upload image">
-      <p> Drag and drop or click to upload</p>
-      <input type="file" name="file" id="file" disabled>
+      <div class="boxfile">
+         <img src="./assets/images/icon-upload.svg" alt="upload image" id="upimg">
+      <p id="idp"> Drag and drop or click to upload</p>
+      <input type="file" name="file" id="file">
+      </div>
     </div>
     <p>&#9432;  Upload your photo (JPG or PNG, max size: 500KB).</p>
 
     <div class="neg">
-       <label for="fullname">Full Name</label>
-      <input type="text" name="text" id="text">
+       <label for="fullname">Full Name</label><br>
+      <input type="text" name="text" id="text"><br>
 
-      <label for="email">Email Address</label>
-      <input type="email" name="email" id="email" placeholder="example@email.com">
+      <label for="email">Email Address</label><br>
+      <input type="email" name="email" id="email" placeholder="example@email.com"><br>
 
-      <label for="github">Github username</label>
-      <input type="text" name="github" id="github" placeholder="@yourusername">
+      <label for="github">Github username</label><br>
+      <input type="text" name="github" id="github" placeholder="@yourusername"><br>
 
     </div>
 
  
 
-  <button type="submit">Generate My Ticket</button>
+  <button id="btn" type="submit">Generate My Ticket</button>
 
  </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
