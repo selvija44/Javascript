@@ -9,14 +9,21 @@ filebox.addEventListener("click", () => {
 const namee = document.getElementById('errorname');
 const emaile = document.getElementById('erroremail');
 const errorgh = document.getElementById('errorgh');
-
-function validate(name,email,gh) {
-    if (name === " "){
-        namee.innerHTML = `<span id="errorname">Name can't be empty</span>`
+const f_name = document.getElementById('text');
+const f_email = document.getElementById('email');
+const f_gh = document.getElementById('github');
+function chckname(){
+    let flag = false
+    if (f_name.innerText !== " "){
+        flag =  true
     }
-    if (email === " ") or (email.contains !== "@"){
-        emaile.innerHTML = `<span id="erroremail">Email can't be empty</span>`
+    else if ((f_email.innerText.length > 6) > (f_email.contains("@"))){
+        flag = true
     }
-    if (errorgh === " ") or (errorgh.contains !== "@github")
-    
+    else if (f_gh.innerText !== " "){
+        flag =  true
+    }
+    return flag
 }
+
+console.log(chckname());
